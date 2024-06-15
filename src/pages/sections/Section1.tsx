@@ -2,6 +2,7 @@ import * as React from 'react';
 import background from '../../assets/background1.png';
 import Box from '@mui/material/Box';
 import Navbar from "../../components/Navbar";
+import Sizes from "../../components/SizesSection";
 
 function Section1() {
     return (
@@ -14,6 +15,7 @@ function Section1() {
          }}
         >
             <Navbar />
+            <Sizes />
         </Box>
     );
 }

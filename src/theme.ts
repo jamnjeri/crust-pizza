@@ -40,7 +40,7 @@ const theme: ThemeOptions = createTheme({
       main: "#666973",
     },
     white: {
-      main: "#FFFFF",
+      main: "#FFFFFF",
     },
   },
   typography: {

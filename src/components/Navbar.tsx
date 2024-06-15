@@ -51,7 +51,7 @@ function Navbar() {
         display: "flex",
         flexDirection: "row",
         justifyContent: isSmallDevice ? "space-between" : "center",
-        padding: isSmallDevice ? "12px" : "24px",
+        padding: isSmallDevice ? "10px" : "12px",
       }}
     >
       <div style={{ display: "flex", alignItems: "center" }}>
