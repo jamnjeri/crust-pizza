@@ -25,10 +25,10 @@ const theme: ThemeOptions = createTheme({
       default: "#FFFFFF",
     },
     orange: {
-      main: "#EF662F",
+      main: "#FB5607",
     },
     black: {
-      main: "#FFC11C",
+      main: "#000000",
     },
     darkGrey: {
       main: "#241F20",
