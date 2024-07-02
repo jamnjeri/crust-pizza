@@ -1,7 +1,6 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import { useTheme } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 function SizesSection() {
   const sizes = ["S", "M", "L", "XL"];
@@ -28,52 +27,37 @@ function SizesSection() {
       </p>
       <div style={{ display: "flex", flexDirection: "row", gap: "12px" }}>
         {sizes.map((size) => (
-          <Button
-            variant="outlined"
+          <Box
             key={size}
-            style={{
-              border: `2px solid ${theme.palette.black.main}`,
-              backgroundColor:
-                activeSize === size ? theme.palette.black.main : "transparent",
-              color:
-                activeSize === size
-                  ? theme.palette.white.main
-                  : theme.palette.black.main,
-            }}
             sx={{
-              width: {
-                xs: "40px",
-                sm: "50px",
-                md: "60px",
-                lg: "70px",
-                xl: "80px",
-              },
-              height: {
-                xs: "40px",
-                sm: "50px",
-                md: "60px",
-                lg: "70px",
-                xl: "80px",
-              },
-              padding: 0,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "50px",
+              height: "50px",
               borderRadius: "50%",
+              backgroundColor: activeSize === size ? "#000000" : "none",
+              color: activeSize === size ? "#FFFFFF" : "#000000",
+              fontSize: "24px",
+              textAlign: "center",
+              lineHeight: "50px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              border: '2px solid #000000',
+              cursor: "pointer",
+              "@media (max-width: 600px)": {
+                width: "30px",
+                height: "30px",
+                fontSize: "16px",
+                lineHeight: "30px",
+              },
+              "&:hover": {
+                boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+              },
             }}
             onClick={() => setActiveSize(size)}
           >
-            <Typography
-              textAlign="center"
-              fontSize={{
-                xs: "1rem",
-                sm: "1.2rem",
-                md: "1.4rem",
-                lg: "1.6rem",
-                xl: "1.8rem",
-              }}
-              padding="0"
-            >
-              {size}
-            </Typography>
-          </Button>
+            {size}
+          </Box>
         ))}
       </div>
     </div>

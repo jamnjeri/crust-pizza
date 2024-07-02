@@ -1,15 +1,10 @@
 import * as React from "react";
 import logo from "../assets/crustPizzaLogo.svg";
 import bikeIcon from "../assets/deliverbikeIcon.svg";
-import AppBar from "@mui/material/AppBar";
-import Container from "@mui/material/Container";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Avatar from "@mui/material/Avatar";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";

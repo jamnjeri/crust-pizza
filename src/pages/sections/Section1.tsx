@@ -3,6 +3,7 @@ import background from '../../assets/background1.png';
 import Box from '@mui/material/Box';
 import Navbar from "../../components/Navbar";
 import Sizes from "../../components/SizesSection";
+import PizzaCircle from '../../components/PizzaCircle';
 
 function Section1() {
     return (
@@ -16,6 +17,7 @@ function Section1() {
         >
             <Navbar />
             <Sizes />
+            <PizzaCircle />
         </Box>
     );
 }
